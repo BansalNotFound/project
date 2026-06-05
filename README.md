@@ -5,6 +5,23 @@ An enterprise-grade, secure, and entirely offline facial recognition and livenes
 1. **Mobile FaceShield Module**: A lightweight offline React Native application supporting cross-platform Android (8.0+) and iOS (12+) deployments.
 2. **Biometric Web Gateway**: A secure MERN dashboard (MongoDB + Express + React + Node.js) with a Python Flask Machine Learning microservice using TensorFlow.
 
+### 🖥️ Application Previews & Screenshots
+
+Here are visual previews of the implemented secure facial recognition and liveness detection system:
+
+| **Dashboard & Audit Log** | **Operator Enrollment** |
+|:---:|:---:|
+| ![Dashboard & Audit Log](assets/dashboard_mockup.png) | ![Operator Enrollment](assets/enrollment_mockup.png) |
+
+| **Biometric Verification Portal** | **Liveness & Spoof Rejection** |
+|:---:|:---:|
+| ![Biometric Verification](assets/verification_mockup.png) | ![Liveness & Spoof Rejection](assets/verification_audit_mockup.png) |
+
+| **Mobile Attendance App** | **System Flow & Architecture** |
+|:---:|:---:|
+| ![Mobile Attendance App](assets/mobile_app_mockup.png) | ![System Flow & Architecture](assets/system_flow_mockup.png) |
+
+
 ---
 
 
