@@ -1,7 +1,7 @@
 /**
  * StorageService.js
  * AES-256 encrypted SQLite offline storage
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  *
  * Stores enrollment templates and attendance records offline.
  * All biometric data encrypted with AES-256 before storage.

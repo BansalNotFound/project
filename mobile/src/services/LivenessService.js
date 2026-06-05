@@ -1,7 +1,7 @@
 /**
  * LivenessService.js
  * Dual-layer liveness detection — Active Challenge + Passive Texture Analysis
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  *
  * Layer 1 (Active):  MediaPipe Face Mesh — blink / smile / head-turn detection
  * Layer 2 (Passive): MobileNetV3 anti-spoofing classifier (~3 MB TFLite)

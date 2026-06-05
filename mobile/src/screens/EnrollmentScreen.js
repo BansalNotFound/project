@@ -1,7 +1,7 @@
 /**
  * EnrollmentScreen.js
  * Face enrollment flow — capture 5 photos for a new user
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  */
 
 import React, { useState, useRef, useCallback } from 'react';
@@ -99,7 +99,7 @@ export default function EnrollmentScreen({ navigation }) {
             style={styles.input}
             value={userName}
             onChangeText={setUserName}
-            placeholder="e.g. Anisha Garg"
+            placeholder="e.g. Ishant Bansal"
           />
 
           <View style={styles.infoBox}>

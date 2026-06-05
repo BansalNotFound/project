@@ -1,7 +1,7 @@
 /**
  * AuthScreen.js
  * Main authentication screen — camera + liveness challenge UI
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  */
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';

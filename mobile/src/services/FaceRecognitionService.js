@@ -1,7 +1,7 @@
 /**
  * FaceRecognitionService.js
  * MobileFaceNet TFLite face recognition engine
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  *
  * Model: MobileFaceNet (TFLite FP16 quantized)
  * Size:  ~2 MB

@@ -1,7 +1,7 @@
 /**
  * SyncService.js
  * AWS S3 sync and local purge service
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  *
  * Monitors network connectivity and uploads pending attendance
  * records to AWS S3 when connection is restored.

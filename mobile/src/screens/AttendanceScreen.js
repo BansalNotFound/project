@@ -1,7 +1,7 @@
 /**
  * AttendanceScreen.js
  * Offline attendance log with sync status
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  */
 
 import React, { useState, useEffect, useCallback } from 'react';

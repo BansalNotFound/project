@@ -1,7 +1,7 @@
 /**
  * CryptoUtils.js
  * AES-256 encryption utilities for biometric data protection
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  */
 
 import CryptoJS from 'crypto-js';

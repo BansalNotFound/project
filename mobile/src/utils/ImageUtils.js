@@ -1,7 +1,7 @@
 /**
  * ImageUtils.js
  * Image preprocessing utilities for MobileFaceNet TFLite input
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  *
  * MobileFaceNet expects: [1, 112, 112, 3] float32 tensor, normalized to [-1, 1]
  */

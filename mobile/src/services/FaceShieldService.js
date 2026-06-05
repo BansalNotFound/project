@@ -1,7 +1,7 @@
 /**
  * FaceShieldService.js
  * Core authentication orchestrator for FaceShield
- * NHAI Hackathon 7.0 — Anisha Garg
+ * NHAI Hackathon 7.0 — Ishant Bansal
  *
  * Orchestrates: Face Detection → Liveness Check → Face Recognition → Storage
  */

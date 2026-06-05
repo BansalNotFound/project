@@ -246,7 +246,7 @@ hackathon7-faceshield/
 
 | Name | Role |
 |------|------|
-| **Anisha Garg** | Team Leader — AI/ML, React Native |
+| **Ishant Bansal** | Team Leader — AI/ML, React Native |
 | Team Member 1 | Backend, AWS Integration |
 
 **Hackathon**: NHAI Hackathon 7.0
