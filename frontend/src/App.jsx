@@ -130,26 +130,62 @@ export default function App() {
             <h2>Operator Security Dashboard</h2>
             
             {currentUser && (
-              <div style={{ marginBottom: '2rem', background: 'var(--bg-tertiary)', padding: '1rem', borderRadius: '12px' }}>
+              <div style={{ marginBottom: '1.5rem', background: 'var(--bg-tertiary)', padding: '1rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Authenticated Profile</p>
-                <h3 style={{ fontSize: '1.25rem', marginTop: '0.25rem' }}>{currentUser.name}</h3>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>UID: {currentUser.userId}</p>
+                <h3 style={{ fontSize: '1.25rem', marginTop: '0.25rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--success)', boxShadow: '0 0 8px var(--success)' }}></span>
+                  {currentUser.name}
+                </h3>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>UID: {currentUser.userId}</p>
                 {currentUser.email && <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Email: {currentUser.email}</p>}
               </div>
             )}
 
             {userStats && (
-              <div className="dashboard-grid">
-                <div className="dashboard-card">
+              <div className="dashboard-grid" style={{ marginBottom: '1.5rem' }}>
+                <div className="dashboard-card" style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)', borderRadius: '16px', padding: '1rem' }}>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Verification Rate</div>
                   <div className="dashboard-val">{userStats.successRate.toFixed(1)}%</div>
                 </div>
-                <div className="dashboard-card">
+                <div className="dashboard-card" style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)', borderRadius: '16px', padding: '1rem' }}>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Total Logins</div>
                   <div className="dashboard-val">{userStats.totalVerifications}</div>
                 </div>
               </div>
             )}
+
+            {/* Visual Analytics Chart (Matches dashboard_preview mockup) */}
+            <div style={{ background: 'var(--bg-tertiary)', padding: '1.25rem', borderRadius: '16px', border: '1px solid var(--border-color)', marginBottom: '1.5rem' }}>
+              <h4 style={{ fontSize: '0.85rem', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '1.25rem' }}>Hourly Authentication Traffic</h4>
+              <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', height: '80px', paddingTop: '10px' }}>
+                {[30, 45, 25, 60, 95, 75, 40, 85, 90, 65, 50, 70].map((h, i) => (
+                  <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}>
+                    <div style={{ height: `${h}%`, width: '80%', background: 'linear-gradient(to top, var(--accent-secondary), var(--accent-primary))', borderRadius: '4px 4px 0 0', position: 'relative', boxShadow: '0 0 8px var(--accent-glow)' }}>
+                      <span style={{ fontSize: '8px', color: '#fff', position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', opacity: 0.8 }}>{h}</span>
+                    </div>
+                    <span style={{ fontSize: '9px', color: 'var(--text-muted)', marginTop: '4px' }}>{i + 8}h</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* System Status Metrics */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', marginBottom: '2rem' }}>
+              <div style={{ background: 'var(--bg-tertiary)', padding: '0.75rem', borderRadius: '12px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>ML Service</div>
+                <div style={{ fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--success)', marginTop: '0.25rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
+                  <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--success)', display: 'inline-block', boxShadow: '0 0 6px var(--success)' }}></span> Online
+                </div>
+              </div>
+              <div style={{ background: 'var(--bg-tertiary)', padding: '0.75rem', borderRadius: '12px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>Active Model</div>
+                <div style={{ fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--accent-primary)', marginTop: '0.25rem' }}>FaceNet</div>
+              </div>
+              <div style={{ background: 'var(--bg-tertiary)', padding: '0.75rem', borderRadius: '12px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>Sync Queue</div>
+                <div style={{ fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--text-primary)', marginTop: '0.25rem' }}>0 Pending</div>
+              </div>
+            </div>
 
             <div>
               <h3>Recent Security Log Entries</h3>
@@ -177,6 +213,7 @@ export default function App() {
                 )}
               </div>
             </div>
+
             
             <button 
               type="button" 
