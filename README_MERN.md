@@ -14,23 +14,6 @@ This project implements a complete MERN (MongoDB, Express, React, Node.js) appli
 - ✅ Docker containerization
 - ✅ Cloud-ready deployment
 
-### 🖥️ Application Previews & Screenshots
-
-Here are visual previews of the implemented MERN face recognition and liveness detection system:
-
-| **Dashboard & Audit Log** | **Operator Enrollment** |
-|:---:|:---:|
-| ![Dashboard & Audit Log](docs/images/dashboard_preview.png) | ![Operator Enrollment](docs/images/enrollment_portal.png) |
-
-| **Biometric Verification Portal** | **Liveness & Spoof Rejection** |
-|:---:|:---:|
-| ![Biometric Verification](docs/images/verification_portal.png) | ![Liveness & Spoof Rejection](docs/images/verification_audit.png) |
-
-| **Mobile Attendance App** | **System Flow & Architecture** |
-|:---:|:---:|
-| ![Mobile Attendance App](docs/images/mobile_app_preview.png) | ![System Flow & Architecture](docs/images/system_flow_chart.png) |
-
-
 ## 📁 Project Structure
 
 ```
